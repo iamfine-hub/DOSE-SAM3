@@ -3,14 +3,14 @@ requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "sam3"
+name = "dose-sam3"
 dynamic = ["version"]
-description = "SAM3 (Segment Anything Model 3) implementation"
+description = "DOSE: a lightweight text adapter for few-shot segmentation with SAM3"
 readme = "README.md"
 requires-python = ">=3.8"
 license = {file = "LICENSE"}
 authors = [
-    {name = "Meta AI Research"}
+    {name = "iamfine-hub"}
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -79,8 +79,8 @@ train = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/facebookresearch/sam3"
-"Bug Tracker" = "https://github.com/facebookresearch/sam3/issues"
+"Homepage" = "https://github.com/iamfine-hub/DOSE-SAM3"
+"Bug Tracker" = "https://github.com/iamfine-hub/DOSE-SAM3/issues"
 
 [tool.setuptools.packages.find]
 include = ["sam3*"]

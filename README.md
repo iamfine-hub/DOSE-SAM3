@@ -28,7 +28,7 @@ text prompt ──> SAM3 text encoder ──> [32, 1, 256] ──> BlockA ──
 ## Installation
 
 1. Clone this repo and set up SAM3 dependencies.
-2. Follow the [SAM3 official repo](https://github.com/meta-ai/sam3) for model weights and environment setup.
+2. Follow the [SAM3 official repo](https://github.com/facebookresearch/sam3) for model weights and environment setup.
 3. Prepare the FSS data (PASCAL-5i / COCO-20i) and place the split lists under `lists/`.
 
 Dependencies: `torch`, `numpy`, `PIL`, `tqdm`, `iopath` (see `requirements.txt`).
@@ -106,4 +106,5 @@ python visualize_text_embedding.py --checkpoint /path/to/sam3.pt \
 
 ## License
 
-The `sam3/` directory is from Meta AI's [SAM3](https://github.com/meta-ai/sam3) — see its original license. The DOSE adapter code is released under the [MIT License](LICENSE).
+- `sam3/` — from Meta AI's [SAM3](https://github.com/facebookresearch/sam3), under the SAM License (see [`sam3/LICENSE`](sam3/LICENSE)), **except** `sam3/model/text_adapter_seed.py` and `sam3/model/sam3_image_processor_seed.py`, which are DOSE's original contributions released under MIT.
+- Everything else (the DOSE adapter and experiment code) — [MIT License](LICENSE).
